@@ -1,49 +1,40 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  
-  .clients-title {
-    font-size: 36px;
-    line-height: 1.17;
-    margin-bottom: 50px;
-    letter-spacing: 0.03em;
-    text-align: center;
-  }
-  .clients-list {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-  }
-  
-  .clients-item {
-    width: 170px;
-    height: 92px;
-  }
-  
-  .clients-link {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-  }
-  
-  .clients-icon {
-    fill: #afb1b8;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: fill;
-    transition-duration: 250ms;
-  }
-  
-  .clients-link:hover,
-  .clients-link:focus {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: 50px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.clients-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill:#afb1b8;
+  &:hover,
+  &:focus {
     border: 1px solid var(--accent-color);
-  }
-  
-  .clients-link:hover .clients-icon,
-  .clients-link:focus .clients-icon {
     fill: var(--accent-color);
+    outline: none;
   }
+}
+
