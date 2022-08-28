@@ -283,8 +283,7 @@ main {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
-
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -298,32 +297,31 @@ main {
   color: var(--primary-color);
   margin-right: 93px;
 }
-
-.logo-part {
+.logo__part {
   color: var(--accent-color);
 }
 
-.navigation-list {
+.navigation__list {
   display: flex;
   -moz-column-gap: 50px;
        column-gap: 50px;
   position: relative;
 }
-.navigation-list a {
+.navigation__list a {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.navigation-list a {
+.navigation__list a {
   font-weight: 500;
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--primary-color);
 }
-.navigation-list .current {
+.navigation__list .current {
   color: var(--accent-color);
   position: relative;
 }
-.navigation-list .current::after {
+.navigation__list .current::after {
   content: "";
   display: block;
   height: 4px;
@@ -347,8 +345,7 @@ main {
   color: #757575;
   fill: #757575;
 }
-
-.navigation-contacts-item a {
+.navigation-contacts__item a {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -368,8 +365,7 @@ main {
   text-align: center;
   flex-direction: column;
 }
-
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -379,8 +375,7 @@ main {
   max-width: 700px;
   margin: 0 auto;
 }
-
-.hero-btn {
+.hero__btn {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -404,19 +399,16 @@ main {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.about-list {
+.about__list {
   display: flex;
   justify-content: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
-
-.about-list-item {
+.about__item {
   max-width: 270px;
 }
-
-.about-icon-box {
+.about__icon-container {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
@@ -425,8 +417,7 @@ main {
   align-items: center;
   justify-content: center;
 }
-
-.about-list-title {
+.about__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
@@ -435,8 +426,7 @@ main {
   padding-top: 30px;
   padding-bottom: 10px;
 }
-
-.about-list-text {
+.about__text {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -445,8 +435,7 @@ main {
 .ocupation {
   padding-bottom: 94px;
 }
-
-.ocupation-title {
+.ocupation__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -454,20 +443,17 @@ main {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-
-.ocupation-list {
+.ocupation__list {
   display: flex;
   justify-content: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
-
-.ocupation-list-item {
+.ocupation__item {
   position: relative;
   width: calc((100% - 60px) / 3);
 }
-
-.ocupation-top-text {
+.ocupation__top-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -489,8 +475,7 @@ main {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.team-title {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -498,28 +483,29 @@ main {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-
-.team-list {
+.team__container {
   display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
-
-.team-list-item {
+.team__item {
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-name {
+.desc {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.desc__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
-
-.team-text {
+.desc__text {
   font-size: 16px;
   line-height: 1.17;
   text-align: center;
@@ -530,14 +516,12 @@ main {
   margin-top: 10px;
   margin-bottom: 16px;
 }
-
-.team-soc {
+.desc__list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-
-.team-soc-link {
+.desc__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -547,15 +531,10 @@ main {
   justify-content: center;
   fill: #afb1b8;
 }
-.team-soc-link:hover, .team-soc-link:focus {
+.desc__link:hover, .desc__link:focus {
   background-color: var(--accent-color);
   fill: #ffffff;
   outline: none;
-}
-
-.team-desc {
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .clients {
